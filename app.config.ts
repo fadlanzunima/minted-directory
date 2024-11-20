@@ -73,7 +73,7 @@ export default defineAppConfig({
   },
   header: {
     banner: {
-      show: true,
+      show: false,
       text: "Create your own directory website in minutes.",
       link: "https://minteddirectory.com",
       brandText: "MintedDirectory",
