@@ -3,7 +3,7 @@ import type Emoji from "./components/OgImage/Emoji.vue";
 export default defineAppConfig({
   general: {
     title: "Minted Directory",
-    logo: "",
+    logo: "/logo.png",
     iconLogo: "fluent-emoji-flat:leaf-fluttering-in-wind",
   },
   site: {
@@ -14,7 +14,7 @@ export default defineAppConfig({
     description: "Example Description",
     url: "https://example.com",
     favicon: {
-      image: "",
+      image: "/favicon.ico",
       emoji: "🍃",
     },
   },
@@ -80,16 +80,16 @@ export default defineAppConfig({
     },
     navbar: {
       colorModeSelector: true,
-      links: [
-        { name: "Directory", to: "/" },
-        { name: "Blog", to: "/blog" },
-        { name: "Advertise", to: "/advertise" },
-        {
-          name: "Analytics",
-          to: "https://us.posthog.com/shared/7dgSk4cvgNYnJwBu6R47kZXHBUBJWQ",
-          target: "_blank",
-        },
-      ],
+      links: [{
+        name: "Directory",
+        to: "/",
+      }, {
+        name: "Blog",
+        to: "/blog",
+      }, {
+        name: "Advertise",
+        to: "/advertise",
+      }],
     },
     actionButton: {
       text: "Submit a starter",
